@@ -1,15 +1,19 @@
-let year= 2011
-let firstcheck= year % 4
-let secondcheck= year % 400
-let thirdcheck= year % 100
-if( firstcheck== 0){
-    if(secondcheck==0){
-        console.log('yes');
-    }else if(thirdcheck == 0){
-        console.log('No');
+function checkLeapYear(year){
+    let firstCheck= year % 4
+    let secondCheck= year % 400
+    let thirdCheck= year % 100
+    if( firstCheck== 0){
+        if(secondCheck==0){
+            console.log('yes');
+        }else if(thirdCheck == 0){
+            console.log('No');
+        }else{
+            console.log('Yes');
+        }
     }else{
-        console.log('Yes');
+        console.log('No');
     }
-}else{
-    console.log('No');
 }
+
+
+checkLeapYear(2020);
